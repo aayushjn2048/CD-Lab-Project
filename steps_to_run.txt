@@ -1,0 +1,22 @@
+
+STAGE 3(GENERATE MIPS CODE)
+
+In this phase, a program is given to your code, if that program has followed the lexical and syntactic rules of the language, it will create a __MIPS code__, otherwise, it must print the appropriate error with line and column number.
+
+
+
+>>>bison Bison_Rule.y                                     // creates Bison_Rule.tab.c
+>>>flex Lex_Rule.lex                                      // creates lex.yy.c
+>>>bison -d Bison_Rule.y -o myapp.cpp                     // creates the myapp.cpp and 
+                                                             myapp.hpp file
+>>>g++ -o runner Bison_Rule.tab.c lex.yy.c                // creates the nunner.exe file 
+                                                             using the Bison_Rule.tab.c and lex.yy.c
+
+
+
+ 
+
+
+
+To test:
+	>>>runner [testfilename] 
