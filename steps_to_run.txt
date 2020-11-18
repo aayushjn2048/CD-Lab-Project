@@ -1,6 +1,4 @@
 
-STAGE 3(GENERATE MIPS CODE)
-
 In this phase, a program is given to your code, if that program has followed the lexical and syntactic rules of the language, it will create a __MIPS code__, otherwise, it must print the appropriate error with line and column number.
 
 
